@@ -125,7 +125,7 @@
 //   console.log("Smallest number is:", smallest);
 //   console.log("Largest number is:", largest);
 // }
- 
+
 // Q:14  Count how many numbers are even and how many are odd in an array
 // var numbers=[1,2,3,4,5,6,7,8,9,10]
 // var evenNum=0;
@@ -164,3 +164,87 @@
 // }else{
 // console.log("there is no even number in this array", firstEven)
 // }
+
+// Q:17 Find the last odd number in an array
+// var num=[2,6,1,7,8,9,10]
+// var lastOdd=[]
+// for(var i=0; i<num.length; i++){
+//     if (num[i]%2!=0){
+//         lastOdd=num[i];
+//     }
+// }
+// if(lastOdd==null){
+//     console.log("The First Odd", lastOdd)
+// }else{
+//     console.log("There is no odd number is this array", lastOdd)
+// }
+
+// Q:18  Check if a given number exists in the array
+// var num = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100]
+// var target = 0;
+// var found = []
+// for (var i = 0; i < num.length; i++) {
+//     if (num[i]===target)
+//         found = true;
+//     break;
+// }
+// if (found) {
+//     console.log("This number is exist in this array")
+// } else {
+//     console.log("This number is not exist in this array ")
+// }
+
+// Q:19  Print the position (index) of a given number in the array.
+// var number = [10, 20, 30, 40, 50]
+// var index = -1;
+// var target = +prompt("Enter Num");
+// for (var i = 0; i < number.length; i++) {
+//     if (number[i] === target) {
+//         index = i;
+//         break;
+//     }
+// }
+// if(index!==-1){
+// console.log('number ' +target+ '  is found at index ' +index)
+// }else{
+//     console.log('number ' +target+ ' is not found in this array '+ index)
+// }
+
+//Q:20 Count how many numbers are greater than 10 in an array.
+// var num=[1,5,10,15,20,25,30,35,40]
+// var count=0;
+// for(var i=0; i<num.length; i++){
+//     if(num[i]>10){
+//         count++;
+//     }
+// }
+// console.log("There are " +count+ " numbers are greater than 10 ")
+
+// Q:21 Create a new array containing only the even numbers from the original array.
+// var numbers=[1,2,3,4,5,6,7,8,9,10]
+// var evenNumbers=[];
+// for(var i=0; i<numbers.length;i++){
+//     if(numbers[i] %2===0){
+//         evenNumbers.push(numbers[i]);
+//     }
+// }
+// console.log("Even Numbers : ", evenNumbers)
+
+// Q:22 Create a new array containing only the odd numbers from the original array
+// var numbers=[1,2,3,4,5,6,7,8,9,10]
+// var oddNumbers=[]
+// for(var i=0; i<numbers.length; i++){
+//     if(numbers[i]%2 !==0){
+//         oddNumbers.push(numbers[i])
+//     }
+// }
+// console.log("Odd Numbers : ", oddNumbers)
+
+// Q:23 Create a new array where each element is increased by 1.
+var num=[1,2,3,4,5,6,7,8,9,10]
+var increasedBY=[]
+for(var i=0; i<num.length; i++){
+    increasedBY.push(num[i]+1);
+}
+console.log("Original Array : ", num)
+console.log("Increased Array : ",increasedBY)
