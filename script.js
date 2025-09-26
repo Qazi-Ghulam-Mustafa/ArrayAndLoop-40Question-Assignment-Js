@@ -241,10 +241,46 @@
 // console.log("Odd Numbers : ", oddNumbers)
 
 // Q:23 Create a new array where each element is increased by 1.
-var num=[1,2,3,4,5,6,7,8,9,10]
-var increasedBY=[]
-for(var i=0; i<num.length; i++){
-    increasedBY.push(num[i]+1);
+// var num=[1,2,3,4,5,6,7,8,9,10]
+// var increasedBY=[]
+// for(var i=0; i<num.length; i++){
+//     increasedBY.push(num[i]+1);
+// }
+// console.log("Original Array : ", num)
+// console.log("Increased Array : ",increasedBY)
+
+// Q:24  Create a new array where each element is multiplied by 5
+// var num=[1,5,10,15,20]
+// var multipltBy=[]
+// for(var i=0;i<num.length;i++){
+//     multipltBy.push(num[i]*5) 
+    
+// }
+// console.log(multipltBy)
+
+// Q:25  Reverse an array without using .reverse()
+// var num=[1,2,3,4,5]
+// for(var i=num.length-1 ; i > -1; i--){
+//     console.log(num[i])
+// }
+
+// Q:26 Copy all elements of one array into another array using a loop.
+// var num=[1,2,3,4,5]
+// var copy=[]
+// for(var i=0; i<num.length; i++){
+//     copy[i]=num[i]
+// }
+// console.log("This copied array",copy)
+
+// Q:27  Merge two arrays into one (without built-in methods)
+var array1=[1,2,3]
+var array2=[4,5,6]
+var merge=[]
+for(var i=0; i<array1.length; i++){
+    merge[merge.length]=array1[i];
 }
-console.log("Original Array : ", num)
-console.log("Increased Array : ",increasedBY)
+for(var i=0; i<array2.length; i++){
+    merge[merge.length]=array2[i];
+}
+console.log(merge)
+
