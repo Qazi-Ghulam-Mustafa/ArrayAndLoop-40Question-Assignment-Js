@@ -254,7 +254,7 @@
 // var multipltBy=[]
 // for(var i=0;i<num.length;i++){
 //     multipltBy.push(num[i]*5) 
-    
+
 // }
 // console.log(multipltBy)
 
@@ -273,14 +273,112 @@
 // console.log("This copied array",copy)
 
 // Q:27  Merge two arrays into one (without built-in methods)
-var array1=[1,2,3]
-var array2=[4,5,6]
-var merge=[]
-for(var i=0; i<array1.length; i++){
-    merge[merge.length]=array1[i];
-}
-for(var i=0; i<array2.length; i++){
-    merge[merge.length]=array2[i];
-}
-console.log(merge)
+// var array1=[1,2,3]
+// var array2=[4,5,6]
+// var merge=[]
+// for(var i=0; i<array1.length; i++){
+//     merge[merge.length]=array1[i];
+// }
+// for(var i=0; i<array2.length; i++){
+//     merge[merge.length]=array2[i];
+// }
+// console.log(merge)
 
+// Q:28 Find the sum of only even number in an array
+// var num = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+// var sumOfEvenNumber = 0
+// for (var i = 0; i < num.length; i++) {
+//     if (num[i]%2 == 0) {
+//         sumOfEvenNumber += num[i];
+//     }
+// }
+// console.log(sumOfEvenNumber)
+
+// Q:29 Find the sum of only odd number in an array
+// var num=[1,2,3,4,5,6,7,8,9,10]
+// var sumOfOddNumber=0;
+
+// for(var i=0; i<num.length; i++){
+//     if(num[i]%2!==0){
+//         sumOfOddNumber+= num[i];
+//     }
+// }
+// console.log(sumOfOddNumber)
+
+// Q:30 Replace all negative numbers in array with 0
+// var num=[-1,2,1,-2,3,4,5,6,-7,-8,-9]
+// var replaceWithZero=[]
+// for(var i=0;i<num.length;i++){
+//     if(num[i]<0){
+//         num[i]=0;
+//     }
+// }
+// console.log(num)
+
+// Q:31 Count how many positive and negative numbers are in an array.
+// var num=[-5,-4,-3,-2,-1,1,2,3,4,5,6,7]
+// var positiveNum=[];
+// var negativeNum=[];
+// for(var i=0;i<num.length; i++){
+//     if(num[i]>0){
+//         positiveNum++;
+//     }else if(num[i]<0) {
+//         negativeNum++;
+//     }
+// }
+// console.log("These are the Positive Numbers in array : ",positiveNum)
+// console.log("These are the Negative numbers in arrat : ",negativeNum)
+
+// Q:32 Count how many numbers are divisible by 3 in an array.
+// var num=[1,2,3,4,5,,9,12,15]
+// var count=[]
+// for(var i=0; i<num.length; i++){
+//     if(num[i]%3==0){
+//         count++
+//     }
+// }
+// console.log(count)
+
+// Q:33 Find the second largest number in an array.
+// var num = [10, 20, 30, 40, 50]
+// var largest = -Infinity
+// var secondLargest = -Infinity
+// for (var i = 0; i < num.length; i++) {
+//     if (num[i] > largest) {
+//         secondLargest = largest;
+//         largest = num[i];
+//     } else if (num[i] > secondLargest && num[i] < largest) {
+//     }
+// }
+// console.log("This is the second largest number in array: ", secondLargest)
+
+// Q:34 Find the second largest number in an array.
+// var num=[10,20,30,40,50]
+// var smallest=Infinity;
+// var secondSmallest= Infinity;
+// for(var i=0; i<num.length;i++){
+//     if(num[i]< smallest){
+//         secondSmallest=smallest
+//         smallest=num[i];
+//     }else if(num[i]< secondSmallest && num[i]> smallest){
+//          secondSmallest=num[i]
+//     }
+// }
+// console.log("This is the second smallest number in this array: ",secondSmallest)
+
+// Q:35 Find the difference between the largest and smallest numbers in an array.
+// var num=[10,20,30,40,50]
+// var largest=-Infinity;
+// var smallest=Infinity;
+// for(var i=0; i<num.length; i++){
+//     if(num[i]> largest){
+//         largest = num[i];
+//     }
+//     if(num[i]< smallest){
+//         smallest = num[i];
+//     }
+// }
+// var difference= largest-smallest
+// console.log("This is the largest number in this array : ",largest)
+// console.log("This is the smallest number in this array : ",smallest)
+// console.log("This is the difference between the laregst and smallest number in this array : ",difference)
