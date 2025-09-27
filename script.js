@@ -382,3 +382,34 @@
 // console.log("This is the largest number in this array : ",largest)
 // console.log("This is the smallest number in this array : ",smallest)
 // console.log("This is the difference between the laregst and smallest number in this array : ",difference)
+
+// Q:36 Swap the first and last elements of an array
+// var num=[1,2,3,4,5]
+// if(num.length>1){
+//     for(var i=0; i<num.length; i++){
+//         if(i===0){
+//             var temp= num[i];
+//             num[i]=num[num.length-1];
+//             num[num.length-1]=temp;
+//         }
+//     }
+// }
+// console.log(num)
+
+// Q:37  Rotate the array to the left by one position (e.g., [1,2,3,4] → [2,3,4,1])
+// var num=[1,2,3,4]
+// var firstElement=num[0];
+// for(var i=0; i<num.length -1; i++)  {
+//     num[i]=num[i+1]
+// }
+// num[num.length-1]=firstElement;
+// console.log(num)
+
+// Q:38 Rotate the array to the right by one position (e.g., [1,2,3,4] → [4,1,2,3])
+var num=[1,2,3,4]
+var lastElement=[num.length-1]
+for( var i=num.length-1; i>0; i--){
+    num[i]= num[i-1];
+}
+num[0]=lastElement;
+console.log(num)
