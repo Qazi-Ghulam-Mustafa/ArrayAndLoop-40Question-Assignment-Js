@@ -406,10 +406,28 @@
 // console.log(num)
 
 // Q:38 Rotate the array to the right by one position (e.g., [1,2,3,4] → [4,1,2,3])
-var num=[1,2,3,4]
-var lastElement=[num.length-1]
-for( var i=num.length-1; i>0; i--){
-    num[i]= num[i-1];
-}
-num[0]=lastElement;
-console.log(num)
+// var num=[1,2,3,4]
+// var lastElement=[num.length-1]
+// for( var i=num.length-1; i>0; i--){
+//     num[i]= num[i-1];
+// }
+// num[0]=lastElement;
+// console.log(num)
+
+// Q:39 Check if the array is sorted in ascending order
+
+// var num=[1,2,3,4,5]
+// var sorted=true;
+// for(var i=0; i<num.length; i++){
+//     if(num[i]>num[i+1]){
+//         sorted=false
+//     }
+// }
+// console.log("Is this array is sorted in ascending order? "+sorted )
+
+// Q:40  Print the array elements in reverse without changing the array.
+// `var num=[1,2,3,4,5]
+
+// for(var i=num.length-1; i>=0; i--){
+//     console.log(num[i]);
+// }`
